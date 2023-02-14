@@ -17,8 +17,8 @@ def search_status_code(log_file, status_code):
     return matches
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Search Apache access log for status code.')
-    parser.add_argument('log_file', help='Path to Apache access log file')
+    parser = argparse.ArgumentParser(description='Search Apache access log based off status code.')
+    parser.add_argument('log_file', help='Path to Apache log file')
     parser.add_argument('status_code', help='HTTP status code to search for')
     args = parser.parse_args()
 
